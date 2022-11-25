@@ -148,30 +148,30 @@ Wire Wire Line
 Wire Wire Line
 	9500 5900 9600 5900
 Connection ~ 9600 5350
-$Comp
-L Mechanical:MountingHole H2
-U 1 1 6380F391
-P 8700 5000
-F 0 "H2" H 8800 5046 50  0001 L CNN
-F 1 "MountingHole" H 8800 4955 50  0001 L BNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 8700 5000 50  0001 C CNN
-F 3 "~" H 8700 5000 50  0001 C CNN
-	1    8700 5000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H1
-U 1 1 6380F45F
-P 8950 5000
-F 0 "H1" H 9050 5046 50  0001 L CNN
-F 1 "MountingHole" H 9050 5000 50  0001 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 8950 5000 50  0001 C CNN
-F 3 "~" H 8950 5000 50  0001 C CNN
-	1    8950 5000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8500 5000 8650 5000
 Wire Wire Line
 	9000 5000 9600 5000
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 63810D2C
+P 8650 4900
+F 0 "H2" H 8750 4905 50  0000 L CNN
+F 1 "MountingHole_Pad" H 8750 4860 50  0001 L CNN
+F 2 "custom_libraryies:MountingHole.1.8mm" H 8650 4900 50  0001 C CNN
+F 3 "~" H 8650 4900 50  0001 C CNN
+	1    8650 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 63810E2E
+P 9000 4900
+F 0 "H1" H 9100 4905 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9100 4860 50  0001 L CNN
+F 2 "custom_libraryies:MountingHole.1.8mm" H 9000 4900 50  0001 C CNN
+F 3 "~" H 9000 4900 50  0001 C CNN
+	1    9000 4900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

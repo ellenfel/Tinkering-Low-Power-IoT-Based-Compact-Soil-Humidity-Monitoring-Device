@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/ellenfel/Desktop/pcb/humidity-sensor/Tinkering-Low-Power-IoT-Based-Compact-Soil-Humidity-Monitoring-Device/Resistive-Soil-Humidity-Sensor/Resistive-Soil-Humidity-Sensor.sch)
-    (date "Fri 25 Nov 2022 09:24:39 PM +03")
+    (date "Fri 25 Nov 2022 10:30:59 PM +03")
     (tool "Eeschema 5.0.2-bee76a0~70~ubuntu16.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -45,6 +45,7 @@
       (tstamp 6378BE2C))
     (comp (ref BZ1)
       (value Buzzer)
+      (footprint Buzzer_Beeper:Buzzer_12x9.5RM7.6)
       (datasheet ~)
       (libsource (lib Device) (part Buzzer) (description "Buzzer, polarized"))
       (sheetpath (names /) (tstamps /))
