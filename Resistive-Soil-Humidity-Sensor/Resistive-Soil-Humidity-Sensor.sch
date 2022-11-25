@@ -100,17 +100,6 @@ F 12 "Active" H 8400 5300 60  0001 L CNN "Status"
 	1    8200 4100
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Jumper Probe1
-U 1 1 6378CB33
-P 8800 5000
-F 0 "Probe1" H 8800 5264 50  0000 C CNN
-F 1 "Jumper" H 8800 5173 50  0000 C CNN
-F 2 "" H 8800 5000 50  0001 C CNN
-F 3 "~" H 8800 5000 50  0001 C CNN
-	1    8800 5000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7450 5150 7450 4100
 Wire Wire Line
@@ -155,10 +144,34 @@ Connection ~ 9900 4100
 Wire Wire Line
 	9600 5350 9600 5000
 Wire Wire Line
-	9100 5000 9600 5000
-Wire Wire Line
 	9600 5350 9600 5900
 Wire Wire Line
 	9500 5900 9600 5900
 Connection ~ 9600 5350
+Wire Wire Line
+	8500 5000 8650 5000
+Wire Wire Line
+	9000 5000 9600 5000
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 63810D2C
+P 8650 4900
+F 0 "H2" H 8750 4905 50  0000 L CNN
+F 1 "MountingHole_Pad" H 8750 4860 50  0001 L CNN
+F 2 "custom_libraryies:MountingHole.1.8mm" H 8650 4900 50  0001 C CNN
+F 3 "~" H 8650 4900 50  0001 C CNN
+	1    8650 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 63810E2E
+P 9000 4900
+F 0 "H1" H 9100 4905 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9100 4860 50  0001 L CNN
+F 2 "custom_libraryies:MountingHole.1.8mm" H 9000 4900 50  0001 C CNN
+F 3 "~" H 9000 4900 50  0001 C CNN
+	1    9000 4900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
