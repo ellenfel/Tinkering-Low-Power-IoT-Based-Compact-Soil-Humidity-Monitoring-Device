@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "Low-Power-IoT-Based-Soil-Humidity-Monitoring-Device"
 Date ""
 Rev ""
 Comp ""
@@ -103,10 +103,10 @@ Connection ~ 1000 1250
 Wire Wire Line
 	1000 1250 1000 1400
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 63815F7B
 P 800 1900
-F 0 "#PWR?" H 800 1650 50  0001 C CNN
+F 0 "#PWR0101" H 800 1650 50  0001 C CNN
 F 1 "GND" V 805 1772 50  0000 R CNN
 F 2 "" H 800 1900 50  0001 C CNN
 F 3 "" H 800 1900 50  0001 C CNN
@@ -114,10 +114,10 @@ F 3 "" H 800 1900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0102
 U 1 1 638160B5
 P 850 950
-F 0 "#PWR?" H 850 800 50  0001 C CNN
+F 0 "#PWR0102" H 850 800 50  0001 C CNN
 F 1 "+3.3V" V 865 1077 39  0000 L CNN
 F 2 "" H 850 950 50  0001 C CNN
 F 3 "" H 850 950 50  0001 C CNN
@@ -146,10 +146,10 @@ F 3 "~" H 1800 2500 39  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0103
 U 1 1 6381713B
 P 1450 2350
-F 0 "#PWR?" H 1450 2200 50  0001 C CNN
+F 0 "#PWR0103" H 1450 2200 50  0001 C CNN
 F 1 "+3.3V" V 1465 2477 39  0000 L CNN
 F 2 "" H 1450 2350 50  0001 C CNN
 F 3 "" H 1450 2350 50  0001 C CNN
@@ -157,10 +157,10 @@ F 3 "" H 1450 2350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0104
 U 1 1 63817204
 P 1800 2700
-F 0 "#PWR?" H 1800 2450 50  0001 C CNN
+F 0 "#PWR0104" H 1800 2450 50  0001 C CNN
 F 1 "GND" V 1805 2572 50  0000 R CNN
 F 2 "" H 1800 2700 50  0001 C CNN
 F 3 "" H 1800 2700 50  0001 C CNN
@@ -190,10 +190,10 @@ Wire Wire Line
 	1800 2350 2150 2350
 Connection ~ 1800 2350
 $Comp
-L Device:R deep-sleep-jumper
+L Device:R deep-sleep-jumper1
 U 1 1 63823809
 P 1850 1750
-F 0 "deep-sleep-jumper" V 1900 1750 20  0000 C CNN
+F 0 "deep-sleep-jumper1" V 1900 1750 20  0000 C CNN
 F 1 "0ohm" V 1850 1750 28  0000 C CNN
 F 2 "" V 1780 1750 50  0001 C CNN
 F 3 "~" H 1850 1750 50  0001 C CNN
@@ -212,10 +212,10 @@ SIG
 Wire Wire Line
 	1950 1550 2050 1550
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0105
 U 1 1 63824B5A
 P 3500 2250
-F 0 "#PWR?" H 3500 2000 50  0001 C CNN
+F 0 "#PWR0105" H 3500 2000 50  0001 C CNN
 F 1 "GND" V 3505 2122 50  0000 R CNN
 F 2 "" H 3500 2250 50  0001 C CNN
 F 3 "" H 3500 2250 50  0001 C CNN
@@ -287,10 +287,10 @@ MOSI
 Text Label 3050 2700 3    39   ~ 0
 SCLK
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0106
 U 1 1 6382E4D0
 P 2450 1000
-F 0 "#PWR?" H 2450 750 50  0001 C CNN
+F 0 "#PWR0106" H 2450 750 50  0001 C CNN
 F 1 "GND" H 2400 1000 50  0000 R CNN
 F 2 "" H 2450 1000 50  0001 C CNN
 F 3 "" H 2450 1000 50  0001 C CNN
@@ -372,10 +372,10 @@ F 3 "~" H 5550 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0107
 U 1 1 63833033
 P 5650 2200
-F 0 "#PWR?" H 5650 1950 50  0001 C CNN
+F 0 "#PWR0107" H 5650 1950 50  0001 C CNN
 F 1 "GND" H 5600 2200 50  0000 R CNN
 F 2 "" H 5650 2200 50  0001 C CNN
 F 3 "" H 5650 2200 50  0001 C CNN
@@ -411,8 +411,8 @@ Wire Wire Line
 	6100 1300 6100 1600
 Wire Wire Line
 	6100 1600 6250 1600
-Text Notes 4300 7500 2    59   Italic 0
-Battery Management/Charger Section\n\n
+Text Notes 7450 4350 2    59   Italic 0
+Reverse Polarity Protection\n\n
 $Comp
 L dk_Interface-Controllers:CP2102-GMR_NRND IC2
 U 1 1 638421C7
@@ -485,10 +485,10 @@ Wire Wire Line
 Wire Wire Line
 	8100 1250 8250 1250
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0108
 U 1 1 63849CDD
 P 8100 950
-F 0 "#PWR?" H 8100 700 50  0001 C CNN
+F 0 "#PWR0108" H 8100 700 50  0001 C CNN
 F 1 "GND" V 8105 822 50  0000 R CNN
 F 2 "" H 8100 950 50  0001 C CNN
 F 3 "" H 8100 950 50  0001 C CNN
@@ -502,10 +502,10 @@ Wire Wire Line
 	8950 750  8850 750 
 Connection ~ 8850 750 
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H1
 U 1 1 6384BD2F
 P 7650 750
-F 0 "H?" V 7900 1000 50  0001 C CNN
+F 0 "H1" V 7900 1000 50  0001 C CNN
 F 1 "MountingHole_Pad" V 7850 1250 50  0001 C CNN
 F 2 "" H 7650 750 50  0001 C CNN
 F 3 "~" H 7650 750 50  0001 C CNN
@@ -513,10 +513,10 @@ F 3 "~" H 7650 750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H2
 U 1 1 6384BE34
 P 7650 900
-F 0 "H?" V 7900 1150 50  0001 C CNN
+F 0 "H2" V 7900 1150 50  0001 C CNN
 F 1 "MountingHole_Pad" V 7800 1350 50  0001 C CNN
 F 2 "" H 7650 900 50  0001 C CNN
 F 3 "~" H 7650 900 50  0001 C CNN
@@ -526,10 +526,10 @@ $EndComp
 Wire Wire Line
 	7750 900  7750 1100
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0109
 U 1 1 6384D1FB
 P 7750 1100
-F 0 "#PWR?" H 7750 950 50  0001 C CNN
+F 0 "#PWR0109" H 7750 950 50  0001 C CNN
 F 1 "+3.3V" V 7765 1227 39  0000 L CNN
 F 2 "" H 7750 1100 50  0001 C CNN
 F 3 "" H 7750 1100 50  0001 C CNN
@@ -537,10 +537,10 @@ F 3 "" H 7750 1100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0110
 U 1 1 6384D4A7
 P 8650 3400
-F 0 "#PWR?" H 8650 3150 50  0001 C CNN
+F 0 "#PWR0110" H 8650 3150 50  0001 C CNN
 F 1 "GND" V 8655 3272 50  0000 R CNN
 F 2 "" H 8650 3400 50  0001 C CNN
 F 3 "" H 8650 3400 50  0001 C CNN
@@ -629,10 +629,10 @@ VBUS
 Wire Wire Line
 	10650 1250 10650 1400
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0111
 U 1 1 6386360E
 P 10650 1400
-F 0 "#PWR?" H 10650 1150 50  0001 C CNN
+F 0 "#PWR0111" H 10650 1150 50  0001 C CNN
 F 1 "GND" V 10655 1272 50  0000 R CNN
 F 2 "" H 10650 1400 50  0001 C CNN
 F 3 "" H 10650 1400 50  0001 C CNN
@@ -640,10 +640,10 @@ F 3 "" H 10650 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R9
 U 1 1 63864FC6
 P 9900 2200
-F 0 "R?" V 10000 2200 50  0000 C CNN
+F 0 "R9" V 10000 2200 50  0000 C CNN
 F 1 "47.5k" V 9900 2200 39  0000 C CNN
 F 2 "" V 9830 2200 50  0001 C CNN
 F 3 "~" H 9900 2200 50  0001 C CNN
@@ -701,10 +701,10 @@ $EndComp
 Wire Wire Line
 	8700 4600 8450 4600
 $Comp
-L dk_Transistors-Bipolar-BJT-Single:MMSS8050-H-TP Q?
+L dk_Transistors-Bipolar-BJT-Single:MMSS8050-H-TP Q3
 U 1 1 6387AA37
 P 9650 4000
-F 0 "Q?" H 9838 4053 60  0000 L CNN
+F 0 "Q3" H 9838 4053 60  0000 L CNN
 F 1 "MMSS8050-H-TP" H 9838 3947 60  0000 L CNN
 F 2 "digikey-footprints:SOT-23-3" H 9850 4200 60  0001 L CNN
 F 3 "https://www.mccsemi.com/pdf/Products/MMSS8050(SOT-23).pdf" H 9850 4300 60  0001 L CNN
@@ -721,10 +721,10 @@ F 12 "Active" H 9850 5200 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L dk_Transistors-Bipolar-BJT-Single:MMSS8050-H-TP Q?
+L dk_Transistors-Bipolar-BJT-Single:MMSS8050-H-TP Q4
 U 1 1 6387CD2F
 P 9650 4600
-F 0 "Q?" H 9838 4547 60  0000 L CNN
+F 0 "Q4" H 9838 4547 60  0000 L CNN
 F 1 "MMSS8050-H-TP" H 9838 4653 60  0000 L CNN
 F 2 "digikey-footprints:SOT-23-3" H 9850 4800 60  0001 L CNN
 F 3 "https://www.mccsemi.com/pdf/Products/MMSS8050(SOT-23).pdf" H 9850 4900 60  0001 L CNN
@@ -794,10 +794,10 @@ F 9 "629105136821" H 1600 3500 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Power_Protection:SRV05-4 U?
+L Power_Protection:SRV05-4 U2
 U 1 1 638F3A01
 P 2200 4900
-F 0 "U?" H 2600 4550 50  0000 C CNN
+F 0 "U2" H 2600 4550 50  0000 C CNN
 F 1 "SRV05-4" H 2450 4450 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6" H 2900 4450 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 2200 4900 50  0001 C CNN
@@ -819,10 +819,10 @@ Wire Wire Line
 Wire Wire Line
 	1550 4150 1300 4150
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0112
 U 1 1 63904A57
 P 1400 3950
-F 0 "#PWR?" H 1400 3700 50  0001 C CNN
+F 0 "#PWR0112" H 1400 3700 50  0001 C CNN
 F 1 "GND" V 1405 3822 50  0000 R CNN
 F 2 "" H 1400 3950 50  0001 C CNN
 F 3 "" H 1400 3950 50  0001 C CNN
@@ -830,10 +830,10 @@ F 3 "" H 1400 3950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0113
 U 1 1 63904B80
 P 2200 5500
-F 0 "#PWR?" H 2200 5250 50  0001 C CNN
+F 0 "#PWR0113" H 2200 5250 50  0001 C CNN
 F 1 "GND" V 2205 5372 50  0000 R CNN
 F 2 "" H 2200 5500 50  0001 C CNN
 F 3 "" H 2200 5500 50  0001 C CNN
@@ -855,10 +855,10 @@ USB_DP
 Text Label 2700 4250 2    39   Italic 0
 USB_DN
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0114
 U 1 1 63915497
 P 2850 4400
-F 0 "#PWR?" H 2850 4150 50  0001 C CNN
+F 0 "#PWR0114" H 2850 4150 50  0001 C CNN
 F 1 "GND" V 2855 4272 50  0000 R CNN
 F 2 "" H 2850 4400 50  0001 C CNN
 F 3 "" H 2850 4400 50  0001 C CNN
@@ -896,10 +896,10 @@ Wire Wire Line
 Text GLabel 3750 4400 2    39   Input Italic 0
 VBUS
 $Comp
-L Battery_Management:LTC4054ES5-4.2 U?
+L Battery_Management:LTC4054ES5-4.2 U1
 U 1 1 63927F11
 P 2400 6500
-F 0 "U?" H 2750 6250 50  0000 L CNN
+F 0 "U1" H 2750 6250 50  0000 L CNN
 F 1 "LTC4054ES5-4.2" H 2550 6150 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 2400 6000 50  0001 C CNN
 F 3 "http://cds.linear.com/docs/en/datasheet/405442xf.pdf" H 2400 6400 50  0001 C CNN
@@ -1002,4 +1002,236 @@ Text GLabel 900  6500 0    39   Input Italic 0
 VBUS
 Text Notes 9300 5150 2    59   Italic 0
 USB to UART Section
+$Comp
+L dk_PMIC-Voltage-Regulators-Linear:MIC5219-3_3YM5-TR IC3
+U 1 1 639A56E3
+P 6100 4650
+F 0 "IC3" H 6250 4850 60  0000 C CNN
+F 1 "MIC5219-3_3YM5-TR" H 6650 4950 60  0000 C CNN
+F 2 "digikey-footprints:SOT-753" H 6300 4850 60  0001 L CNN
+F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en579712" H 6300 4950 60  0001 L CNN
+F 4 "576-1281-1-ND" H 6300 5050 60  0001 L CNN "Digi-Key_PN"
+F 5 "MIC5219-3.3YM5-TR" H 6300 5150 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 6300 5250 60  0001 L CNN "Category"
+F 7 "PMIC - Voltage Regulators - Linear" H 6300 5350 60  0001 L CNN "Family"
+F 8 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en579712" H 6300 5450 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/microchip-technology/MIC5219-3.3YM5-TR/576-1281-1-ND/771902" H 6300 5550 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC REG LINEAR 3.3V 500MA SOT23-5" H 6300 5650 60  0001 L CNN "Description"
+F 11 "Microchip Technology" H 6300 5750 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6300 5850 60  0001 L CNN "Status"
+	1    6100 4650
+	1    0    0    -1  
+$EndComp
+Text Label 6300 4550 2    39   Italic 0
+3.3V-Reg
+Wire Wire Line
+	6400 4650 6600 4650
+$Comp
+L power:+3.3V #PWR0116
+U 1 1 639B1B11
+P 7150 4650
+F 0 "#PWR0116" H 7150 4500 50  0001 C CNN
+F 1 "+3.3V" V 7165 4777 39  0000 L CNN
+F 2 "" H 7150 4650 50  0001 C CNN
+F 3 "" H 7150 4650 50  0001 C CNN
+	1    7150 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 639B74A1
+P 6400 5150
+F 0 "C6" H 6500 5150 50  0000 L CNN
+F 1 "470pF/10V" H 6500 5100 39  0000 L CNN
+F 2 "" H 6400 5150 50  0001 C CNN
+F 3 "~" H 6400 5150 50  0001 C CNN
+	1    6400 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 5050 6400 4750
+Wire Wire Line
+	6400 5250 6400 5300
+$Comp
+L power:GND #PWR0117
+U 1 1 639CCA1F
+P 6400 5350
+F 0 "#PWR0117" H 6400 5100 50  0001 C CNN
+F 1 "GND" V 6405 5222 50  0000 R CNN
+F 2 "" H 6400 5350 50  0001 C CNN
+F 3 "" H 6400 5350 50  0001 C CNN
+	1    6400 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 5300 6400 5300
+Wire Wire Line
+	6100 4950 6100 5300
+Connection ~ 6400 5300
+Wire Wire Line
+	6400 5300 6400 5350
+$Comp
+L Device:C_Small C7
+U 1 1 639D20EF
+P 6600 4800
+F 0 "C7" H 6700 4800 50  0000 L CNN
+F 1 "10uF/6.3V" H 6700 4750 39  0000 L CNN
+F 2 "" H 6600 4800 50  0001 C CNN
+F 3 "~" H 6600 4800 50  0001 C CNN
+	1    6600 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 639D215D
+P 7100 4800
+F 0 "C8" H 7200 4800 50  0000 L CNN
+F 1 "0.1uF/6.3V" H 7200 4750 39  0000 L CNN
+F 2 "" H 7100 4800 50  0001 C CNN
+F 3 "~" H 7100 4800 50  0001 C CNN
+	1    7100 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 4700 6600 4650
+Connection ~ 6600 4650
+Wire Wire Line
+	6600 4650 7100 4650
+Wire Wire Line
+	7100 4700 7100 4650
+Connection ~ 7100 4650
+Wire Wire Line
+	7100 4650 7150 4650
+Wire Wire Line
+	6600 4900 6600 4950
+Wire Wire Line
+	6600 4950 7000 4950
+Wire Wire Line
+	7100 4950 7100 4900
+$Comp
+L power:GND #PWR0118
+U 1 1 639E2C30
+P 7000 4950
+F 0 "#PWR0118" H 7000 4700 50  0001 C CNN
+F 1 "GND" V 7005 4822 50  0000 R CNN
+F 2 "" H 7000 4950 50  0001 C CNN
+F 3 "" H 7000 4950 50  0001 C CNN
+	1    7000 4950
+	1    0    0    -1  
+$EndComp
+Connection ~ 7000 4950
+Wire Wire Line
+	7000 4950 7100 4950
+Text Notes 3600 4850 2    59   Italic 0
+USB Section
+Text Notes 3400 7100 2    59   Italic 0
+Charging Section\n
+$Comp
+L SI2301:SI2301 Q2
+U 1 1 639E6FCD
+P 5200 4950
+F 0 "Q2" V 5767 5050 50  0000 C CNN
+F 1 "SI2301" V 5676 5050 50  0000 C CNN
+F 2 "SI2305TP" H 5650 4900 50  0001 L CNN
+F 3 "" H 5650 4800 50  0001 L CNN
+F 4 "MOSFET -20V -2.8A" H 5650 4700 50  0001 L CNN "Description"
+F 5 "" H 5650 4600 50  0001 L CNN "Height"
+F 6 "833-SI2301" H 5650 4500 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Micro-Commercial-Components-MCC/SI2301?qs=6W4OQKoqJ0vnr93btiHXdQ%3D%3D" H 5650 4400 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Micro Commercial Components (MCC)" H 5650 4300 50  0001 L CNN "Manufacturer_Name"
+F 9 "SI2301" H 5650 4200 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5200 4950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5400 4650 5700 4650
+Wire Wire Line
+	5700 4650 5700 4750
+Wire Wire Line
+	5700 4750 5800 4750
+Connection ~ 5700 4650
+Wire Wire Line
+	5700 4650 5800 4650
+$Comp
+L Device:R R14
+U 1 1 63A04FF2
+P 4950 5100
+F 0 "R14" V 4850 5100 50  0000 C CNN
+F 1 "100k" V 4950 5100 39  0000 C CNN
+F 2 "" V 4880 5100 50  0001 C CNN
+F 3 "~" H 4950 5100 50  0001 C CNN
+	1    4950 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0119
+U 1 1 63A0B8F3
+P 5400 5200
+F 0 "#PWR0119" H 5400 4950 50  0001 C CNN
+F 1 "GND" V 5405 5072 50  0000 R CNN
+F 2 "" H 5400 5200 50  0001 C CNN
+F 3 "" H 5400 5200 50  0001 C CNN
+	1    5400 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4950 5200 5100
+Wire Wire Line
+	5200 5100 5100 5100
+$Comp
+L dk_Diodes-Rectifiers-Single:SS14 D2
+U 1 1 63A1ED1D
+P 4450 4550
+F 0 "D2" V 4546 4472 50  0000 R CNN
+F 1 "SS14" V 4455 4472 50  0000 R CNN
+F 2 "digikey-footprints:DO-214AC" H 4650 4750 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/SS19-D.PDF" H 4650 4850 60  0001 L CNN
+F 4 "SS14CT-ND" H 4650 4950 60  0001 L CNN "Digi-Key_PN"
+F 5 "SS14" H 4650 5050 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 4650 5150 60  0001 L CNN "Category"
+F 7 "Diodes - Rectifiers - Single" H 4650 5250 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/SS19-D.PDF" H 4650 5350 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/SS14/SS14CT-ND/965729" H 4650 5450 60  0001 L CNN "DK_Detail_Page"
+F 10 "DIODE SCHOTTKY 40V 1A SMA" H 4650 5550 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 4650 5650 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4650 5750 60  0001 L CNN "Status"
+	1    4450 4550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4450 4400 4450 4350
+Wire Wire Line
+	4450 4300 4700 4300
+Text GLabel 4700 4300 2    39   Input Italic 0
+CHARGER
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 63A25D6D
+P 4450 4950
+F 0 "BT1" H 4150 5000 50  0001 L CNN
+F 1 "Battery_Cell" H 3900 4900 50  0001 L CNN
+F 2 "" V 4450 5010 50  0001 C CNN
+F 3 "~" V 4450 5010 50  0001 C CNN
+	1    4450 4950
+	1    0    0    -1  
+$EndComp
+Connection ~ 4450 4350
+Wire Wire Line
+	4450 4350 4450 4300
+Wire Wire Line
+	4800 4650 4450 4650
+Wire Wire Line
+	4450 4650 4450 4750
+Connection ~ 4450 4650
+Wire Wire Line
+	4800 5100 4700 5100
+Wire Wire Line
+	4700 5100 4700 5200
+Wire Wire Line
+	4450 5200 4700 5200
+Wire Wire Line
+	4450 5050 4450 5200
+Connection ~ 4700 5200
+Wire Wire Line
+	4700 5200 5400 5200
 $EndSCHEMATC
