@@ -1,4 +1,416 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 26 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R1
+U 1 1 638152D9
+P 1150 950
+F 0 "R1" V 1200 1150 50  0000 C CNN
+F 1 "12k" V 1150 950 39  0000 C CNN
+F 2 "" V 1080 950 50  0001 C CNN
+F 3 "~" H 1150 950 50  0001 C CNN
+	1    1150 950 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 63815320
+P 1150 1100
+F 0 "R2" V 1200 1300 50  0000 C CNN
+F 1 "12k" V 1150 1100 39  0000 C CNN
+F 2 "" V 1080 1100 50  0001 C CNN
+F 3 "~" H 1150 1100 50  0001 C CNN
+	1    1150 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 63815338
+P 1150 1250
+F 0 "R3" V 1200 1450 50  0000 C CNN
+F 1 "12k" V 1150 1250 39  0000 C CNN
+F 2 "" V 1080 1250 50  0001 C CNN
+F 3 "~" H 1150 1250 50  0001 C CNN
+	1    1150 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 63815352
+P 1150 1400
+F 0 "R4" V 1200 1600 50  0000 C CNN
+F 1 "12k" V 1150 1400 39  0000 C CNN
+F 2 "" V 1080 1400 50  0001 C CNN
+F 3 "~" H 1150 1400 50  0001 C CNN
+	1    1150 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 1400 1500 1400
+$Comp
+L Device:C_Small C1
+U 1 1 63815908
+P 1500 1650
+F 0 "C1" H 1350 1750 50  0000 L CNN
+F 1 "0.1uF/6.3V" H 1100 1650 39  0000 L CNN
+F 2 "" H 1500 1650 50  0001 C CNN
+F 3 "~" H 1500 1650 50  0001 C CNN
+	1    1500 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1550 1500 1400
+$Comp
+L Device:R R5
+U 1 1 63815A13
+P 1200 1900
+F 0 "R5" V 1300 1900 50  0000 C CNN
+F 1 "12k" V 1200 1900 39  0000 C CNN
+F 2 "" V 1130 1900 50  0001 C CNN
+F 3 "~" H 1200 1900 50  0001 C CNN
+	1    1200 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	800  950  950  950 
+Wire Wire Line
+	1000 1100 950  1100
+Wire Wire Line
+	950  1100 950  950 
+Connection ~ 950  950 
+Wire Wire Line
+	950  950  1000 950 
+Connection ~ 950  1100
+Wire Wire Line
+	950  1100 950  1250
+Wire Wire Line
+	950  1400 1000 1400
+Wire Wire Line
+	1000 1250 950  1250
+Connection ~ 950  1250
+Wire Wire Line
+	950  1250 950  1400
+$Comp
+L power:GND #PWR?
+U 1 1 63815F7B
+P 750 1900
+F 0 "#PWR?" H 750 1650 50  0001 C CNN
+F 1 "GND" V 755 1772 50  0000 R CNN
+F 2 "" H 750 1900 50  0001 C CNN
+F 3 "" H 750 1900 50  0001 C CNN
+	1    750  1900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 638160B5
+P 800 950
+F 0 "#PWR?" H 800 800 50  0001 C CNN
+F 1 "+3.3V" V 815 1077 39  0000 L CNN
+F 2 "" H 800 950 50  0001 C CNN
+F 3 "" H 800 950 50  0001 C CNN
+	1    800  950 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	750  1900 950  1900
+Wire Wire Line
+	950  1900 950  1750
+Wire Wire Line
+	950  1750 1500 1750
+Connection ~ 950  1900
+Wire Wire Line
+	950  1900 1050 1900
+Connection ~ 1500 1400
+$Comp
+L Device:C_Small C2
+U 1 1 63817092
+P 1750 2500
+F 0 "C2" H 1600 2600 50  0000 L CNN
+F 1 "2.2uF/6.3V" H 1850 2500 39  0000 L CNN
+F 2 "" H 1750 2500 50  0001 C CNN
+F 3 "~" H 1750 2500 39  0001 C CNN
+	1    1750 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6381713B
+P 1400 2350
+F 0 "#PWR?" H 1400 2200 50  0001 C CNN
+F 1 "+3.3V" V 1415 2477 39  0000 L CNN
+F 2 "" H 1400 2350 50  0001 C CNN
+F 3 "" H 1400 2350 50  0001 C CNN
+	1    1400 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 63817204
+P 1750 2700
+F 0 "#PWR?" H 1750 2450 50  0001 C CNN
+F 1 "GND" V 1755 2572 50  0000 R CNN
+F 2 "" H 1750 2700 50  0001 C CNN
+F 3 "" H 1750 2700 50  0001 C CNN
+	1    1750 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2600 1750 2700
+$Comp
+L customESP-12E_Module:ESP-12F IC1
+U 1 1 6381E878
+P 2600 2000
+F 0 "IC1" H 3050 2850 50  0000 C CNN
+F 1 "ESP-12F" H 2950 2750 50  0000 C CNN
+F 2 "RF_Module:ESP-12E" H 2500 2050 50  0001 C CNN
+F 3 "http://wiki.ai-thinker.com/_media/esp8266/esp8266_series_modules_user_manual_v1.1.pdf" H 2250 2350 50  0001 C CNN
+	1    2600 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1400 1650 1400
+Wire Wire Line
+	1750 2350 1750 2400
+Wire Wire Line
+	1400 2350 1750 2350
+Wire Wire Line
+	1750 2350 2100 2350
+Connection ~ 1750 2350
+$Comp
+L Device:R deep-sleep-jumper
+U 1 1 63823809
+P 1800 1750
+F 0 "deep-sleep-jumper" V 1850 1750 20  0000 C CNN
+F 1 "0ohm" V 1800 1750 28  0000 C CNN
+F 2 "" V 1730 1750 50  0001 C CNN
+F 3 "~" H 1800 1750 50  0001 C CNN
+	1    1800 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1650 1400 1650 1750
+Connection ~ 1650 1400
+Wire Wire Line
+	1650 1400 2000 1400
+Wire Wire Line
+	1950 1750 2000 1750
+Text GLabel 1900 1550 0    39   Input ~ 0
+SIG
+Wire Wire Line
+	1900 1550 2000 1550
+$Comp
+L power:GND #PWR?
+U 1 1 63824B5A
+P 3450 2250
+F 0 "#PWR?" H 3450 2000 50  0001 C CNN
+F 1 "GND" V 3455 2122 50  0000 R CNN
+F 2 "" H 3450 2250 50  0001 C CNN
+F 3 "" H 3450 2250 50  0001 C CNN
+	1    3450 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3200 2250 3450 2250
+Text Label 1450 1250 0    50   ~ 0
+EN
+Text Label 1450 1100 0    50   ~ 0
+GPIO1
+Wire Wire Line
+	1300 1100 1700 1100
+Wire Wire Line
+	1300 1250 1700 1250
+Text Label 1450 950  0    50   ~ 0
+GPIO0
+Wire Wire Line
+	1300 950  1700 950 
+Text Label 1850 1400 0    50   ~ 0
+RST
+Text Label 1850 1650 0    50   ~ 0
+EN
+Wire Wire Line
+	1750 1650 2000 1650
+Text Label 1400 1900 0    50   ~ 0
+GPIO15
+Wire Wire Line
+	1350 1900 1400 1900
+Wire Wire Line
+	3200 1400 3450 1400
+Wire Wire Line
+	3200 1500 3450 1500
+Text GLabel 3450 1400 2    50   Input ~ 0
+TX
+Text GLabel 3450 1500 2    50   Input ~ 0
+RX
+Wire Wire Line
+	3200 1600 3300 1600
+Wire Wire Line
+	3200 1700 3300 1700
+Text GLabel 3300 1600 2    50   Input ~ 0
+PROBE_PWR
+Text GLabel 3300 1700 2    50   Input ~ 0
+PROBE_PWR
+Text Label 3550 1800 2    50   ~ 0
+GPIO0
+Text Label 3550 1900 2    50   ~ 0
+GPIO2
+Text Label 3550 2150 2    50   ~ 0
+GPIO15
+Wire Wire Line
+	3200 1800 3550 1800
+Wire Wire Line
+	3200 1900 3550 1900
+Wire Wire Line
+	3200 2150 3550 2150
+Text Label 2250 2700 3    39   ~ 0
+CS0
+Text Label 2400 2700 3    39   ~ 0
+MIS0
+Text Label 2550 2700 3    39   ~ 0
+GPIO9
+Text Label 2700 2700 3    39   ~ 0
+GPIO10
+Text Label 2850 2700 3    39   ~ 0
+MOSI
+Text Label 3000 2700 3    39   ~ 0
+SCLK
+$Comp
+L power:GND #PWR?
+U 1 1 6382E4D0
+P 2400 1000
+F 0 "#PWR?" H 2400 750 50  0001 C CNN
+F 1 "GND" H 2350 1000 50  0000 R CNN
+F 2 "" H 2400 1000 50  0001 C CNN
+F 3 "" H 2400 1000 50  0001 C CNN
+	1    2400 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 SW1
+U 1 1 6382F044
+P 2700 600
+F 0 "SW1" H 1550 650 50  0000 C CNN
+F 1 "SW_DIP_x01" H 1950 650 50  0000 C CNN
+F 2 "" H 2700 600 50  0001 C CNN
+F 3 "" H 2700 600 50  0001 C CNN
+	1    2700 600 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 SW2
+U 1 1 6382F799
+P 2700 850
+F 0 "SW2" H 1550 1050 50  0000 C CNN
+F 1 "SW_DIP_x01" H 1950 1050 50  0000 C CNN
+F 2 "" H 2700 850 50  0001 C CNN
+F 3 "" H 2700 850 50  0001 C CNN
+	1    2700 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 1000 2400 850 
+Connection ~ 2400 850 
+Wire Wire Line
+	2400 850  2400 600 
+Wire Wire Line
+	3000 850  3150 850 
+Text GLabel 3150 850  2    39   Input ~ 0
+RST
+Wire Wire Line
+	3000 600  3150 600 
+Text GLabel 3150 600  2    39   Input ~ 0
+GIO0
+Text Notes 4000 2650 2    39   Italic 0
+Application Control Center
+Text GLabel 4700 750  0    50   Input ~ 0
+PROBE_PWR
+Text GLabel 4700 950  0    50   Input ~ 0
+PROBE_PWR
+$Comp
+L Device:R R11
+U 1 1 638325D5
+P 5450 1100
+F 0 "R11" V 5550 1100 50  0000 C CNN
+F 1 "100ohm" V 5450 1100 31  0000 C CNN
+F 2 "" V 5380 1100 50  0001 C CNN
+F 3 "~" H 5450 1100 50  0001 C CNN
+	1    5450 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 63832685
+P 5000 1850
+F 0 "R10" V 5100 1850 50  0000 C CNN
+F 1 "10k" V 5000 1850 39  0000 C CNN
+F 2 "" V 4930 1850 50  0001 C CNN
+F 3 "~" H 5000 1850 50  0001 C CNN
+	1    5000 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Q_DUAL_NPN_NPN_E1B1C2E2B2C1 Q1
+U 1 1 63832F6D
+P 4900 1250
+F 0 "Q1" H 4800 1400 50  0000 L CNN
+F 1 "Q_DUAL_NPN_NPN_E1B1C2E2B2C1" H 5091 1205 50  0001 L CNN
+F 2 "" H 5100 1350 50  0001 C CNN
+F 3 "~" H 4900 1250 50  0001 C CNN
+	1    4900 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 63833033
+P 5000 2150
+F 0 "#PWR?" H 5000 1900 50  0001 C CNN
+F 1 "GND" H 4950 2150 50  0000 R CNN
+F 2 "" H 5000 2150 50  0001 C CNN
+F 3 "" H 5000 2150 50  0001 C CNN
+	1    5000 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 1250 4700 1250
+Text GLabel 4500 1250 0    39   Input Italic 0
+PROBE1
+Wire Wire Line
+	4700 950  5000 950 
+Wire Wire Line
+	5000 950  5000 1050
+Wire Wire Line
+	5000 1450 5000 1550
+Text GLabel 4500 1550 0    39   Input ~ 0
+SIG
+Wire Wire Line
+	4500 1550 5000 1550
+Connection ~ 5000 1550
+Wire Wire Line
+	5000 1550 5000 1700
+Wire Wire Line
+	5000 2000 5000 2150
+Text GLabel 5600 1550 2    39   Input Italic 0
+PROBE2
+Wire Wire Line
+	5450 950  5450 750 
+Wire Wire Line
+	4700 750  5450 750 
+Wire Wire Line
+	5450 1250 5450 1550
+Wire Wire Line
+	5450 1550 5600 1550
+Text Notes 5600 1850 2    39   Italic 0
+Soil Sensor
 $EndSCHEMATC
