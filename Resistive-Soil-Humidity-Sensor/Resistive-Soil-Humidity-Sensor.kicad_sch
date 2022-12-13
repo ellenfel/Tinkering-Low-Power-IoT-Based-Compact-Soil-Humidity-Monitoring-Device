@@ -735,7 +735,7 @@
     (property "Value" "MountingHole_Pad" (id 1) (at 222.25 125.476 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (property "Footprint" "custom_libraryies:MountingHole.1.8mm" (id 2) (at 219.71 124.46 0)
+    (property "Footprint" "Connector_Pin:Pin_D0.9mm_L10.0mm_W2.4mm_FlatFork" (id 2) (at 219.71 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 219.71 124.46 0)
@@ -746,20 +746,20 @@
 
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 228.6 124.46 0) (unit 1)
     (in_bom yes) (on_board yes)
-    (uuid 00000000-0000-0000-0000-000063810e2e)
+    (uuid 053aa4e3-3c22-47af-931c-1d193f4e41c2)
     (property "Reference" "H1" (id 0) (at 231.14 124.333 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole_Pad" (id 1) (at 231.14 125.476 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (property "Footprint" "custom_libraryies:MountingHole.1.8mm" (id 2) (at 228.6 124.46 0)
+    (property "Footprint" "Connector_Pin:Pin_D0.9mm_L10.0mm_W2.4mm_FlatFork" (id 2) (at 228.6 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 228.6 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 93169893-abe9-48c2-ae91-537d7c6733b6))
+    (pin "1" (uuid edb999c3-224c-4a2a-a99a-22816e8c4a91))
   )
 
   (symbol (lib_id "BH9VPC:BH9VPC") (at 177.8 133.35 270) (unit 1)
@@ -832,11 +832,11 @@
     (path "/00000000-0000-0000-0000-00006378b976"
       (reference "D1") (unit 1) (value "LED") (footprint "LED_THT:LED_D3.0mm_FlatTop")
     )
-    (path "/00000000-0000-0000-0000-000063810e2e"
-      (reference "H1") (unit 1) (value "MountingHole_Pad") (footprint "custom_libraryies:MountingHole.1.8mm")
+    (path "/053aa4e3-3c22-47af-931c-1d193f4e41c2"
+      (reference "H1") (unit 1) (value "MountingHole_Pad") (footprint "Connector_Pin:Pin_D0.9mm_L10.0mm_W2.4mm_FlatFork")
     )
     (path "/00000000-0000-0000-0000-000063810d2c"
-      (reference "H2") (unit 1) (value "MountingHole_Pad") (footprint "custom_libraryies:MountingHole.1.8mm")
+      (reference "H2") (unit 1) (value "MountingHole_Pad") (footprint "Connector_Pin:Pin_D0.9mm_L10.0mm_W2.4mm_FlatFork")
     )
     (path "/00000000-0000-0000-0000-00006378b088"
       (reference "Q1") (unit 1) (value "BC547") (footprint "Package_TO_SOT_THT:TO-92_Inline")
