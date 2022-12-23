@@ -1,7 +1,7 @@
 (export (version "E")
   (design
     (source "/home/ellenfel/Desktop/repos/humidity-sensor/Resistive-Soil-Humidity-Sensor/Resistive-Soil-Humidity-Sensor.kicad_sch")
-    (date "Sal 13 Ara 2022 15:40:00 +03")
+    (date "Cum 23 Ara 2022 10:39:16 +03")
     (tool "Eeschema 6.0.9-8da3e8f707~117~ubuntu18.04.1")
     (sheet (number "1") (name "/") (tstamps "/")
       (title_block
@@ -71,7 +71,7 @@
       (tstamps "00000000-0000-0000-0000-000063810d2c"))
     (comp (ref "Q1")
       (value "BC547")
-      (footprint "Package_TO_SOT_THT:TO-92_Inline")
+      (footprint "Package_TO_SOT_THT:TO-92_Inline2-bigger")
       (datasheet "http://www.fairchildsemi.com/ds/BC/BC547.pdf")
       (libsource (lib "Transistor_BJT") (part "BC547") (description "0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"))
       (property (name "Sheetname") (value ""))
@@ -241,7 +241,7 @@
     (net (code "5") (name "Net-(D1-Pad2)")
       (node (ref "D1") (pin "2") (pinfunction "A") (pintype "passive"))
       (node (ref "R1") (pin "2") (pintype "passive")))
-    (net (code "6") (name "Net-(Q1-Pad2)")
+    (net (code "6") (name "Net-(H1-Pad1)")
       (node (ref "H1") (pin "1") (pinfunction "1") (pintype "input"))
       (node (ref "Q1") (pin "2") (pinfunction "B") (pintype "input"))
       (node (ref "RV1") (pin "2") (pinfunction "2") (pintype "passive")))

@@ -638,7 +638,7 @@
     (property "Value" "BC547" (id 1) (at 253.7714 137.033 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Package_TO_SOT_THT:TO-92_Inline" (id 2) (at 254 137.795 0)
+    (property "Footprint" "Package_TO_SOT_THT:TO-92_Inline2-bigger" (id 2) (at 254 137.795 0)
       (effects (font (size 1.27 1.27) italic) (justify left) hide)
     )
     (property "Datasheet" "http://www.fairchildsemi.com/ds/BC/BC547.pdf" (id 3) (at 248.92 135.89 0)
@@ -839,7 +839,7 @@
       (reference "H2") (unit 1) (value "MountingHole_Pad") (footprint "Connector_Pin:Pin_D0.9mm_L10.0mm_W2.4mm_FlatFork")
     )
     (path "/00000000-0000-0000-0000-00006378b088"
-      (reference "Q1") (unit 1) (value "BC547") (footprint "Package_TO_SOT_THT:TO-92_Inline")
+      (reference "Q1") (unit 1) (value "BC547") (footprint "Package_TO_SOT_THT:TO-92_Inline2-bigger")
     )
     (path "/00000000-0000-0000-0000-00006378be2c"
       (reference "R1") (unit 1) (value "1kohm") (footprint "Resistor_SMD:R_0402_1005Metric")
